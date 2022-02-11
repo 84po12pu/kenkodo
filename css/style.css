@@ -1,0 +1,678 @@
+@charset "utf-8";
+
+/* 共通----------------------------------------------------------------------- */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li+li {
+    border-left: 1px #fff solid;
+    padding: 0 20px;
+}
+
+.navipadding {
+    padding-right: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+/* home----------------------------------------------------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-left: 350px;
+}
+
+header img {
+    width: 313px;
+    margin-bottom: 10px;
+}
+
+#logo {
+    width: 199px;
+    background-color: #614013;
+    padding: 45px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    z-index: 100;
+}
+
+#gnavi {
+    margin-right: 150px;
+    margin-top: 10px;
+}
+
+#gnavi-list {
+    font-size: 2rem;
+}
+
+.title {
+    font-family: serif;
+    color: #614013;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+}
+
+.title p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.home {
+    background-color: #b7a99c;
+    position: relative;
+    height: 100vh;
+    max-width: 1920px;
+    /* 大きいサイズのpcのため */
+    margin: 0 auto;
+    /* 大きいサイズのpcのため */
+}
+
+.home a:hover {
+    color: #614013;
+}
+
+#hero {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 85%;
+    width: 92%;
+    object-fit: cover;
+    object-position: right top;
+}
+
+/*menu----------------------------------------------------------------------- */
+h2 {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+h3 {
+    font-family: serif;
+    font-size: 48px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.sentence {
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+}
+
+.contents {
+    max-width: 800px;
+    border: solid 1.5px #614013;
+    padding: 80px 0 80px 80px;
+    margin-bottom: 200px;
+}
+
+.button {
+    font-size: 2rem;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 60px;
+    background-color: #614013;
+}
+
+.button:hover {
+    opacity: .6;
+}
+
+.base {
+    position: relative;
+}
+
+.base img {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+}
+
+.bg {
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    background-color: #614013;
+    color: #fff;
+    width: 120px;
+    font-size: 4.8rem;
+    text-align: center;
+    line-height: 120px;
+}
+
+/*news----------------------------------------------------------------------- */
+#news {
+    background-color: #b7a99c;
+    padding-bottom: 100px;
+}
+
+#news h2 {
+    padding-top: 100px;
+}
+
+#news p {
+    border-bottom: 1.5px solid #fff;
+    line-height: 50px;
+    color: #fff;
+    text-indent: 3.2rem;
+    font-size: 1.6rem;
+}
+
+#news p:hover {
+    color: #614013;
+    font-size: 1.8rem;
+}
+
+time {
+    margin-right: 48px;
+}
+
+/*instructor----------------------------------------------------------------------- */
+.teacher {
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.teacher img:hover {
+    transform: scale(1.1);
+    opacity: .6;
+}
+
+figcaption {
+    font-size: 1.6rem;
+    color: #614013;
+    font-family: serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.two {
+    display: flex;
+}
+
+.mleft {
+    margin-left: 70px;
+}
+
+/*workshop----------------------------------------------------------------------- */
+
+/* スライダーのためのcss===================== */
+.slider img {
+    width: 100%;
+    /*スライダー内の画像を横幅100%に*/
+    height: auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+.slider .slick-slide {
+    margin: 0;
+    /*スライド左右の余白調整*/
+
+    padding: 0;
+}
+
+/* ===================================== */
+
+.slider {
+    max-width: 1920px;
+    margin: 0 auto;
+    /* 大きいpcのため */
+}
+
+.slider div {
+    position: relative;
+}
+
+.slider p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    background-color: rgb(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    font-family: serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.slider p:hover {
+    background-color: rgb(255, 255, 255, .7);
+    color: #614013;
+}
+
+/*footer----------------------------------------------------------------------- */
+footer {
+    margin-top: 100px;
+    background-color: #b7a99c;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sns {
+    width: 30px;
+    margin-left: 5px;
+}
+
+.sns:hover {
+    transform: scale(1.1);
+    opacity: .6;
+}
+
+#flogo {
+    width: 60px;
+}
+
+#fname {
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.foot {
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.right {
+    margin-left: 50px;
+}
+
+#sitemap-list {
+    font-size: 1.6rem;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+#sitemap a:hover {
+    color: #614013;
+}
+
+small {
+    font-size: 1.2rem;
+}
+
+/* スクロールボタン----------------------------------------------------------------------- */
+.top-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #614013;
+    font-size: 1.6rem;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    border-radius: 10px;
+}
+/* ハンバーガーボタン----------------------------------------------------------------------- */
+.burger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    /* border: solid 2px #fff; */
+    /* border-radius: 10px; */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    /* pc版では非表示 */
+}
+
+.burger span {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 2px;
+    transition: .5s;
+}
+
+.drawer-hidden {
+    display: none;
+    /* チェックボックスを非表示 */
+}
+
+/* スマホ版レスポンシブ----------------------------------------------------------------------- */
+@media (max-width: 1150px) {
+
+    /* home------------------------- */
+    #hero {
+        position: static;
+    }
+
+    #gnavi {
+        margin-top: 0;
+        margin-right: 0;
+        background-color: rgb(97, 64, 19, .8);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 200;
+        width: 170px;
+        height: 100%;
+        display: none;
+        /* ハンバーガー用リスト非表示 */
+    }
+
+    #gnavi-list {
+        display: block;
+        /* ハンバーガー用リスト縦並びのためflex解除 */
+        font-size: 1.6rem;
+    }
+
+    #gnavi-list li+li {
+        border: none;
+        padding: 0px;
+    }
+
+    #gnavi-list li {
+        margin: 20px;
+    }
+
+    .burger {
+        display: flex;
+        /* 表示 */
+        z-index: 300;
+    }
+
+    #drawer-check:checked~#gnavi {
+        display: block;
+        /* 表示 */
+    }
+
+    #drawer-check:checked~.burger span:first-child {
+        position: absolute;
+        transform: rotate(45deg);
+        top: 27px;
+        left: 13px;
+        width: 50%;
+    }
+
+    #drawer-check:checked~.burger span:nth-child(2) {
+        display: none;
+    }
+
+    #drawer-check:checked~.burger span:last-child {
+        position: absolute;
+        transform: rotate(-45deg);
+        top: 27px;
+        left: 13px;
+        width: 50%;
+    }
+
+    header {
+        display: block;
+        /* displayflex解除 */
+        margin-left: calc(350 / 1150 * 100vw);
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    header img {
+        margin: 25px auto 25px auto;
+    }
+
+    #logo {
+        top: calc(0 / 1150 * 100vw);
+        left: calc(100 / 1150 * 100vw);
+        padding: calc(45 / 1150 * 100vw);
+        width: calc(199 / 1150 * 100vw);
+    }
+
+    .home {
+        height: initial;
+        /* 100vh解除 */
+    }
+
+    .title {
+        top: calc(350 / 1150 * 100vw);
+        left: calc(100 / 1150 * 100vw);
+    }
+
+    .title p {
+        font-size: calc(24 / 1150 * 100vw);
+    }
+
+    h1 {
+        font-size: calc(48 / 1150 * 100vw);
+        margin-bottom: calc(30 / 1150 * 100vw);
+    }
+
+    /* menu------------------------- */
+    .base img {
+        position: static;
+        /* absolute解除 */
+    }
+
+    .contents {
+        text-align: center;
+        padding: 30px;
+        margin: 20px 0 100px auto;
+        max-width: 600px;
+    }
+
+    .bg {
+        top: 0;
+        left: 80px;
+        width: 90px;
+        height: 90px;
+        font-size: 3.2rem;
+        line-height: 90px;
+    }
+
+    .button {
+        padding: 5px 30px;
+        font-size: 14px;
+    }
+
+    /* instructor------------------------- */
+    .mleft {
+        margin-left: 30px;
+    }
+
+    /* workshop------------------------- */
+    .slider p {
+        font-size: calc(50 / 1150 * 100vw);
+    }
+
+}
+
+/* 1150 */
+
+/* スマホ版レスポンシブ----------------------------------------------------------------------- */
+@media (max-width: 700px) {
+
+    .wrapper {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    h2 {
+        width: 70%;
+        margin: 100px auto 50px auto;
+    }
+
+    /* home------------------------- */
+    .burger {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        top: 12px;
+        right: 15px;
+    }
+
+    #drawer-check:checked~.burger span:first-child {
+        top: 13px;
+        left: 7px;
+    }
+
+    #drawer-check:checked~.burger span:last-child {
+        top: 13px;
+        left: 7px;
+    }
+
+    header img {
+        width: calc(313 / 700 * 100vw);
+        margin: 15px auto;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+    }
+
+    /* menu------------------------- */
+    .base {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contents {
+        text-align: center;
+        padding: 20px;
+        margin: 20px auto 100px auto;
+        width: 100%;
+    }
+
+    .bg {
+        top: 0;
+        left: 30px;
+        width: 60px;
+        height: 60px;
+        font-size: 2.4rem;
+        line-height: 60px;
+    }
+
+    h3 {
+        font-size: 2.0rem;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+
+    .sentence {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+    }
+
+    /* news------------------------- */
+    #news {
+        padding-bottom: 50px;
+    }
+
+    #news h2 {
+        padding-top: 50px;
+        margin-top: 0;
+    }
+
+    time {
+        display: block;
+        /* 改行のため */
+        text-indent: 0;
+        line-height: 30px;
+    }
+
+    /* instructor------------------------- */
+    .mleft {
+        margin-left: initial;
+    }
+
+    .two {
+        flex-direction: column;
+    }
+
+    .two+div {
+        margin-left: 20px;
+    }
+
+    /* workshop------------------------- */
+
+    /* footer------------------------- */
+    footer {
+        margin-top: 50px;
+    }
+
+    #sitemap-list {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    #flogo {
+        width: 30px;
+    }
+
+    #fname {
+        width: 100px;
+    }
+
+    .sns {
+        width: 15px;
+    }
+
+    .top-link {
+        font-size: 1.0rem;
+        width: 35px;
+        height: 35px;
+        right: 15px;
+        bottom: 15px;
+        border-radius: 7px;
+    }
+
+    small {
+        font-size: 1rem;
+    }
+
+}
+
+/* 700 */

@@ -8,6 +8,7 @@ html {
 
 body {
     font-family: sans-serif;
+    color: #333;
 }
 
 img {
@@ -499,7 +500,7 @@ small {
     h2 {
         margin-right: auto;
         margin-left: auto;
-        width: 75%;
+        width: 70%;
     }
 
     /* menu------------------------- */
@@ -522,6 +523,14 @@ small {
         height: 90px;
         font-size: 3.2rem;
         line-height: 90px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .sentence {
+        font-size: 2rem;
     }
 
     /* instructor------------------------- */
@@ -717,6 +726,18 @@ small {
 
 .right {
     margin-left: 0;
+}
+
+h2 {
+    width: 90%;
+}
+
+#fname {
+width: 120px;
+}
+
+#flogo {
+width: 30px;
 }
 
 }

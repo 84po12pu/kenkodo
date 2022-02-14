@@ -150,7 +150,7 @@ h3 {
 
 .button {
     font-size: 2rem;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     color: #fff;
     padding: 10px 60px;
     background-color: #614013;
@@ -358,7 +358,7 @@ small {
     position: fixed;
     right: 30px;
     bottom: 30px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 /* ハンバーガーボタン----------------------------------------------------------------------- */
 .burger {
@@ -739,5 +739,7 @@ width: 120px;
 #flogo {
 width: 30px;
 }
+
+
 
 }

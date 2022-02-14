@@ -124,8 +124,8 @@ h1 {
 /*menu----------------------------------------------------------------------- */
 h2 {
     text-align: center;
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 h3 {
@@ -297,8 +297,8 @@ footer {
 }
 
 .sns {
-    width: 30px;
-    margin-left: 5px;
+    width: 40px;
+    margin-left: 10px;
 }
 
 .sns:hover {
@@ -341,6 +341,10 @@ small {
 
 /* スクロールボタン----------------------------------------------------------------------- */
 .top-link {
+    display: none;
+}
+
+.top-link.open {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,7 +354,7 @@ small {
     height: 60px;
     text-align: center;
     position: fixed;
-    right: 15px;
+    right: 30px;
     bottom: 30px;
     border-radius: 10px;
 }
@@ -373,6 +377,7 @@ small {
 
 .burger span {
     background-color: #fff;
+    border-radius: 3px;
     display: block;
     width: 100%;
     height: 2px;
@@ -425,6 +430,7 @@ small {
         display: flex;
         /* 表示 */
         z-index: 300;
+        position: fixed;
     }
 
     #drawer-check:checked~#gnavi {
@@ -490,6 +496,12 @@ small {
         margin-bottom: calc(30 / 1150 * 100vw);
     }
 
+    h2 {
+        margin-right: auto;
+        margin-left: auto;
+        width: 75%;
+    }
+
     /* menu------------------------- */
     .base img {
         position: static;
@@ -541,7 +553,6 @@ small {
     }
 
     h2 {
-        width: 70%;
         margin: 100px auto 50px auto;
     }
 
@@ -643,30 +654,43 @@ small {
         margin-top: 50px;
     }
 
+    /* .foot {
+        justify-content: space-between;
+    } */
+
     #sitemap-list {
         flex-wrap: wrap;
         margin-bottom: 20px;
     }
 
     #flogo {
-        width: 30px;
+        width: 40px;
     }
 
     #fname {
-        width: 100px;
+        width: 150px;
     }
 
     .sns {
-        width: 15px;
+        width: 30px;
     }
 
-    .top-link {
+    /* .top-link.open {
         font-size: 1.0rem;
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
         right: 15px;
         bottom: 15px;
         border-radius: 7px;
+    } */
+
+    .top-link.open {
+        font-size: 1.4rem;
+        width: 50px;
+        height: 50px;
+        right: 15px;
+        bottom: 35px;
+        border-radius: 10px;
     }
 
     small {
@@ -676,3 +700,20 @@ small {
 }
 
 /* 700 */
+
+/* スマホ版レスポンシブ----------------------------------------------------------------------- */
+@media (max-width: 410px) {
+
+    .foot {
+        flex-direction: column;
+    }
+
+    .left {
+        margin-bottom: 20px;
+    }
+
+.right {
+    margin-left: 0;
+}
+
+}

@@ -1,3 +1,7 @@
+'use strict';
+
+//workshopスライドショー
+
 $('.slider').slick({
     arrows: false,//左右の矢印はなし
     autoplay: true,//自動的に動き出すか。初期値はfalse。
@@ -24,3 +28,19 @@ $('.slider').slick({
     }
 ]
 });
+
+
+
+
+
+//スクロールpagetop
+
+window.onscroll = function(evt) {
+    const position = document.documentElement.scrollTop || document.body.scrollTop;
+  
+    if (position >= 300) {
+      document.getElementById('page-top').classList.add('open');
+    } else {
+      document.getElementById('page-top').classList.remove('open');
+    }
+  };

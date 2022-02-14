@@ -161,6 +161,7 @@ h3 {
 
 .base {
     position: relative;
+    /* background-color: red; */
 }
 
 .base img {
@@ -430,7 +431,6 @@ small {
         display: flex;
         /* 表示 */
         z-index: 300;
-        position: fixed;
     }
 
     #drawer-check:checked~#gnavi {
@@ -524,11 +524,6 @@ small {
         line-height: 90px;
     }
 
-    .button {
-        padding: 5px 30px;
-        font-size: 14px;
-    }
-
     /* instructor------------------------- */
     .mleft {
         margin-left: 30px;
@@ -592,8 +587,8 @@ small {
 
     .contents {
         text-align: center;
-        padding: 20px;
         margin: 20px auto 100px auto;
+        max-width: initial;
         width: 100%;
     }
 
@@ -615,6 +610,11 @@ small {
     .sentence {
         font-size: 1.4rem;
         margin-bottom: 30px;
+    }
+
+    .button {
+        padding: 5px 30px;
+        font-size: 14px;
     }
 
     /* news------------------------- */
@@ -703,6 +703,9 @@ small {
 
 /* スマホ版レスポンシブ----------------------------------------------------------------------- */
 @media (max-width: 410px) {
+    #news p {
+        line-height: initial;
+    }
 
     .foot {
         flex-direction: column;

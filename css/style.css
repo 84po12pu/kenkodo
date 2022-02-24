@@ -158,6 +158,7 @@ h3 {
 
 .button:hover {
     opacity: .6;
+    border-radius: 20px;
 }
 
 .base {
@@ -684,22 +685,13 @@ small {
         width: 30px;
     }
 
-    /* .top-link.open {
-        font-size: 1.0rem;
-        width: 50px;
-        height: 50px;
-        right: 15px;
-        bottom: 15px;
-        border-radius: 7px;
-    } */
-
     .top-link.open {
         font-size: 1.4rem;
         width: 50px;
         height: 50px;
         right: 15px;
         bottom: 35px;
-        border-radius: 10px;
+        /* border-radius: 10px; */
     }
 
     small {

@@ -444,8 +444,8 @@ small {
         position: absolute;
         transform: rotate(45deg);
         top: 27px;
-        left: 13px;
-        width: 50%;
+        left: 12px;
+        width: 60%;
     }
 
     #drawer-check:checked~.burger span:nth-child(2) {
@@ -456,8 +456,8 @@ small {
         position: absolute;
         transform: rotate(-45deg);
         top: 27px;
-        left: 13px;
-        width: 50%;
+        left: 12px;
+        width: 60%;
     }
 
     header {
@@ -572,12 +572,14 @@ small {
 
     #drawer-check:checked~.burger span:first-child {
         top: 13px;
-        left: 7px;
+        left: 3px;
+        width: 80%;
     }
 
     #drawer-check:checked~.burger span:last-child {
         top: 13px;
-        left: 7px;
+        left: 3px;
+        width: 80%;
     }
 
     header img {

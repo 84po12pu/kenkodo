@@ -134,17 +134,25 @@ h3 {
     font-size: 48px;
     margin-bottom: 40px;
     font-weight: 400;
+
+    width: fit-content;
+    margin-right: auto;
+    
 }
 
 .sentence {
     font-size: 2.4rem;
     margin-bottom: 50px;
+
+    width: fit-content;
+    margin-right: auto;
+    
 }
 
 .contents {
     max-width: 800px;
     border: solid 1.5px #614013;
-    padding: 80px 0 80px 80px;
+    padding: 80px 0 80px 180px;
     margin-bottom: 200px;
 }
 
@@ -154,6 +162,11 @@ h3 {
     color: #fff;
     padding: 10px 60px;
     background-color: #614013;
+
+    display: block;
+    width: fit-content;
+    margin-right: auto;
+    
 }
 
 .button:hover {
@@ -393,7 +406,7 @@ small {
 }
 
 /* スマホ版レスポンシブ----------------------------------------------------------------------- */
-@media (max-width: 1150px) {
+@media (max-width: 1270px) {
 
     /* home------------------------- */
     #hero {
@@ -528,10 +541,16 @@ small {
 
     h3 {
         font-size: 40px;
+        margin-left: auto;
     }
 
     .sentence {
         font-size: 2rem;
+        margin-left: auto;
+    }
+
+    .button {
+        margin-left: auto;
     }
 
     /* instructor------------------------- */

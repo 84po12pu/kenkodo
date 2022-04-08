@@ -45,6 +45,7 @@ li+li {
     padding: 0 80px;
 }
 
+
 /* home----------------------------------------------------------------------- */
 header {
     display: flex;
@@ -136,7 +137,6 @@ h3 {
     font-weight: 400;
     width: fit-content;
     margin-right: auto;
-    
 }
 
 .sentence {
@@ -144,7 +144,6 @@ h3 {
     margin-bottom: 50px;
     width: fit-content;
     margin-right: auto;
-    
 }
 
 .contents {
@@ -163,7 +162,6 @@ h3 {
     display: block;
     width: fit-content;
     margin-right: auto;
-    
 }
 
 .button:hover {
@@ -173,7 +171,6 @@ h3 {
 
 .base {
     position: relative;
-    /* background-color: red; */
 }
 
 .base img {
@@ -261,7 +258,6 @@ figcaption {
 .slider .slick-slide {
     margin: 0;
     /*スライド左右の余白調整*/
-
     padding: 0;
 }
 
@@ -371,6 +367,7 @@ small {
     bottom: 30px;
     /* border-radius: 10px; */
 }
+
 /* ハンバーガーボタン----------------------------------------------------------------------- */
 .burger {
     position: absolute;
@@ -401,6 +398,8 @@ small {
     display: none;
     /* チェックボックスを非表示 */
 }
+
+
 
 /* スマホ版レスポンシブ----------------------------------------------------------------------- */
 @media (max-width: 1270px) {
@@ -564,9 +563,9 @@ small {
         font-size: 3rem;
     }
 
-}
+}/* 1270pxここまで */
 
-/* 1150 */
+
 
 /* スマホ版レスポンシブ----------------------------------------------------------------------- */
 @media (max-width: 700px) {
@@ -687,10 +686,6 @@ small {
         margin-top: 50px;
     }
 
-    /* .foot {
-        justify-content: space-between;
-    } */
-
     #sitemap-list {
         flex-wrap: wrap;
         margin-bottom: 20px;
@@ -720,12 +715,13 @@ small {
         font-size: 1rem;
     }
 
-}
+}/* 700pxここまで */
 
-/* 700 */
+
 
 /* スマホ版レスポンシブ----------------------------------------------------------------------- */
 @media (max-width: 410px) {
+
     #news p {
         line-height: initial;
     }
@@ -738,26 +734,24 @@ small {
         margin-bottom: 20px;
     }
 
-.right {
-    margin-left: 0;
-}
+    .right {
+        margin-left: 0;
+    }
 
-h2 {
-    width: 90%;
-}
+    h2 {
+        width: 90%;
+    }
 
-.slider p {
-    font-size: 2rem;
-}
+    .slider p {
+        font-size: 2rem;
+    }
 
-#fname {
-width: 120px;
-}
+    #fname {
+        width: 120px;
+    }
 
-#flogo {
-width: 30px;
-}
+    #flogo {
+        width: 30px;
+    }
 
-
-
-}
+}/* 410pxここまで */
